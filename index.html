@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARKANOID | BOYMURODOV JAHONGIR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="classic">
+  <main class="container">
+    <header class="header">
+      <div class="logo">ARKANOID<span>★</span></div>
+      <p>G‘ishtlarni sindir, rekordni yangila!</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat">
+        <span>🏆 Ball</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat">
+        <span>🥇 Rekord</span>
+        <strong id="best">0</strong>
+      </div>
+      <div class="stat">
+        <span>❤️ Hayot</span>
+        <strong id="lives">3</strong>
+      </div>
+      <div class="stat">
+        <span>🚀 Bosqich</span>
+        <strong id="level">1</strong>
+      </div>
+    </section>
+
+    <section class="themes">
+      <button class="theme-btn active" data-theme="classic">🎮 Classic</button>
+      <button class="theme-btn" data-theme="neon">💜 Neon</button>
+      <button class="theme-btn" data-theme="colorful">🌈 Rangli</button>
+    </section>
+
+    <section class="game-shell">
+      <canvas id="gameCanvas" width="480" height="560"
+        aria-label="Arkanoid o‘yin maydoni"></canvas>
+
+      <div id="overlay" class="overlay">
+        <div class="overlay-card">
+          <div class="overlay-icon" id="overlayIcon">🧱</div>
+          <h2 id="overlayTitle">ARKANOID</h2>
+          <p id="overlayText">G‘ishtlarni sindirishga tayyormisan?</p>
+          <button id="startBtn" class="main-btn">▶ O‘YINNI BOSHLASH</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="pauseBtn" class="action-btn">⏸ Pauza</button>
+      <button id="soundBtn" class="action-btn">🔊 Ovoz yoqilgan</button>
+      <button id="restartBtn" class="action-btn">↻ Qayta boshlash</button>
+    </section>
+
+    <section class="mobile-controls">
+      <button id="leftBtn" class="move-btn" aria-label="Chapga">◀</button>
+      <button id="launchBtn" class="launch-btn">🚀 TO‘PNI UCHIRISH</button>
+      <button id="rightBtn" class="move-btn" aria-label="O‘ngga">▶</button>
+    </section>
+
+    <p class="help">
+      🖱️ Sichqonchani harakatlantir yoki ← → tugmalarini bos.
+      To‘pni uchirish uchun SPACE tugmasini bos.
+    </p>
+
+    <footer>© BOYMURODOV JAHONGIR</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
